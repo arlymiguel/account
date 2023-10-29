@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /api/v1
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/account_db
+    username: postgres
+    password: mysecretpassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
